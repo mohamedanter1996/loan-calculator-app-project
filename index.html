@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator App</title>
+</head>
+
+<body>
+    
+    <div class="loan-calculator">
+        <div class="top">
+            <h2>Loan Calculator</h2>
+            <div class="group">
+                <div class="input">
+                    <div class="title">Monthly Salary:</div>
+                    <input class="monthly-salary">
+                </div>
+                <div class="input">
+                    <div class="title">Loan Amount:</div>
+                    <input class="loan-amount">
+                </div>
+
+                <div class="input">
+                    <div class="title">Fixed interest annually:</div>
+                    <input class="fixed-interest">
+                </div>
+
+                <div class="input">
+                    <div class="title">Loan repayment period (in years):</div>
+                    <input class="loan-repayment">
+                </div>
+
+            </div>
+        </div>
+        <div class="result">
+            <div class="left">
+                <div class="deduction-percentage">
+                    <h3>The percentage of the installment deducted from the monthly salary:</h3>
+                    <div class="value"></div>
+                </div>
+
+                <div class="total-interest">
+                    <h3>total interest:</h3>
+                    <div class="value"></div>
+                </div>
+
+                <div class="total-paid">
+                    <h3>total paid:</h3>
+                    <div class="value"></div>
+                </div>
+
+                <div class="monthly-installment">
+                    <h3>monthly installment:</h3>
+                    <div class="value"></div>
+                </div>
+
+                <button class="calculate-button" type="button">Calculate</button>
+            </div>
+            <div class="right">
+                
+                <canvas id="myChart" class="chart" style="width:100%;max-width:600px"></canvas> 
+                <button class="clear-button" type="button">clear</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>

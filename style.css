@@ -1,0 +1,204 @@
+.loan-calculator{
+width: 90%;
+box-sizing: border-box;
+margin: 5%;
+border-radius: 8px;
+overflow: clip;
+}
+
+.loan-calculator *{
+    box-sizing: border-box;   
+}
+
+.loan-calculator .top{
+  background-color: #C780FA;
+  padding-bottom: 5px;  
+}
+
+.loan-calculator .top h2{
+text-align: center;
+padding-top: 2%;
+}
+ 
+.loan-calculator .top .group .title{
+    padding-bottom: 5px;
+}
+
+
+.loan-calculator .group{
+ padding-left: 2%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ padding-right: 2%;
+}
+.loan-calculator .result{
+margin-top: 0;    
+background-color:#E3ACF9 ;
+overflow: hidden;
+padding: 0% 2% 2% 2%;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content:space-between;
+flex-direction: row;
+
+}
+
+.loan-calculator .result .left{
+display: flex;
+flex-direction: column;
+width: 50%;
+
+}
+
+.loan-calculator .result .left h3{
+font-size: 16px;
+}
+
+.loan-calculator .result .left .value{
+    font-size: 16px;
+    padding-bottom: 2px;
+    border-bottom: solid 1px;
+    }
+
+    .loan-calculator .result .calculate-button{
+     margin-top: 10px;
+     background-color:#FBF1D3 ;
+     border: 2px solid #FBF1D3;
+     border-radius: 4px;
+     font-size: 16px;
+     font-weight: 600;
+     cursor: pointer;
+    }
+
+   
+    
+    .calculatebutton-blackborder{
+        margin-top: 10px;
+        background-color:#FBF1D3 ;
+        border: 2px solid black;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .loan-calculator .result .left .deduction-percentage .value::after{
+        content: " %"; 
+    }
+
+    .loan-calculator .result .left .total-interest .value::after,
+    .loan-calculator .result .left .total-paid .value::after,
+    .loan-calculator .result .left .monthly-installment .value::after{
+        content: " EGP";
+    }
+
+
+.loan-calculator .result .right{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+   
+    
+}
+
+.loan-calculator .result .right .chart{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    right: 0%;
+    top: 2%;
+    width: 3em;
+   
+    
+    
+    
+}
+
+.loan-calculator .result .clear-button{
+    margin-top: 10px;
+    background-color:#FBF1D3 ;
+    border: 2px solid #FBF1D3;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 2%;
+   }
+
+   .clearbutton-blackborder{
+    margin-top: 10px;
+    background-color:#FBF1D3 ;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+@media ((max-width: 1060px)){
+
+    .loan-calculator .group{
+        padding-left: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-right: 2%;
+    
+       }
+       
+       .loan-calculator .group *{
+       
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-right: 2%;
+        width: 100%;
+       }
+
+       .loan-calculator .result .left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;   
+        }
+
+    .loan-calculator .result .right{
+
+       
+        display: flex;
+       flex-direction: column;
+       width: 100%;
+    
+      
+       
+}
+
+.loan-calculator .result .right .chart{
+    box-sizing: border-box;
+    position: relative;
+    top:0%;
+    left: 0%;
+    right: 30%;
+    /*transform: translateX(13vh);*/
+    
+    
+  
+}
+
+.loan-calculator .result .clear-button{
+    margin-left: 0%;
+}
+
+}
+
+
+
+
+
+
